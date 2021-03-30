@@ -1,1 +1,138 @@
-/* your styles go here */
+/* your styles go here */#portfolio {
+    background: #FFFFFF;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+}
+.section-intro {
+    max-width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 3.6rem;
+    position: relative;
+}
+.section-intro h5 {
+    color: #FF0077;
+    font-size: 1.6rem;
+    line-height: 1.875;
+    margin-bottom: 0.3rem;
+    letter-spacing: .4rem;
+}
+h5, .h05 {
+	font-size: 1.4rem;
+	line-height: 1.714;
+	text-transform: uppercase;
+	letter-spacing: .15rem;
+}
+.section-intro h1 {
+    font-family: "poppins-semibold", serif;
+    font-size: 2rem;
+    color: #313131;
+    line-height: 1.25;
+    margin-bottom: 1.2rem;
+}
+h1, .h01 {
+    font-size: 3.1rem;
+    line-height: 1.355;
+    letter-spacing: -.1rem;
+}
+.container-fluid{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.navbar .container-fluid{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*MEDIA*/
+@media (max-width: 575.98px) {
+.navbar-expand-sm > .container-fluid{
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media (max-width: 991.98px) {
+  .navbar-expand-lg > .container,
+.navbar-expand-lg > .container-fluid,
+.navbar-expand-lg > .container-sm,
+.navbar-expand-lg > .container-md,
+.navbar-expand-lg > .container-lg,
+.navbar-expand-lg > .container-xl {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media (min-width: 992px) {
+
+.navbar-expand-lg > .container-fluid {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 1199.98px) {
+.navbar-expand-xl > .container-fluid{
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+
+
+
+
+
+
+.p-0 {
+  padding: 0 !important;
+}
+
+
+.no-gutters > .col,
+.no-gutters > [class*=col-] {
+  padding-right: 0;
+  padding-left: 0;
+}
+.text-white-50 {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+#portfolio-cont .container-fluid, #portfolio-cont .container-sm, #portfolio-cont .container-md, #portfolio-cont .container-lg, #portfolio-cont .container-xl {
+  max-width: 1920px;
+}
+#portfolio-cont .container-fluid .portfolio-box, #portfolio-cont .container-sm .portfolio-box, #portfolio-cont .container-md .portfolio-box, #portfolio-cont .container-lg .portfolio-box, #portfolio-cont .container-xl .portfolio-box {
+  position: relative;
+  display: block;
+}
+#portfolio-cont .container-fluid .portfolio-box .portfolio-box-caption, #portfolio-cont .container-sm .portfolio-box .portfolio-box-caption, #portfolio-cont .container-md .portfolio-box .portfolio-box-caption, #portfolio-cont .container-lg .portfolio-box .portfolio-box-caption, #portfolio-cont .container-xl .portfolio-box .portfolio-box-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: rgba(244, 98, 58, 0.9);
+  transition: opacity 0.25s ease;
+  text-align: center;
+}
+#portfolio-cont .container-fluid .portfolio-box .portfolio-box-caption .project-category, #portfolio-cont .container-sm .portfolio-box .portfolio-box-caption .project-category, #portfolio-cont .container-md .portfolio-box .portfolio-box-caption .project-category, #portfolio-cont .container-lg .portfolio-box .portfolio-box-caption .project-category, #portfolio-cont .container-xl .portfolio-box .portfolio-box-caption .project-category {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#portfolio-cont .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio-cont .container-sm .portfolio-box .portfolio-box-caption .project-name, #portfolio-cont .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio-cont .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio-cont .container-xl .portfolio-box .portfolio-box-caption .project-name {
+  font-size: 1.2rem;
+}
+#portfolio-cont .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio-cont .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio-cont .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio-cont .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio-cont .container-xl .portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
